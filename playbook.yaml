@@ -1,0 +1,6 @@
+- name: Deployment
+  hosts: remote_01
+  vars_files:
+    - group_vars/vars.yaml
+  roles:
+    - common

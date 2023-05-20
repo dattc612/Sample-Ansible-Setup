@@ -1,0 +1,16 @@
+server:
+  hosts:
+    localhost: 
+      ansible_connection: local
+      ansible_python_interpreter: "{{ansible_playbook_python}}"
+    remote_01:
+      ansible_connection: ssh
+      ansible_host: 192.168.1.10
+      ansible_port: 22
+      ansible_user: iamdat
+      ansible_password: 612000
+      ansible_become: yes 
+      ansible_become_method: sudo
+      ansible_become_pass: 612000
+
+# connectiong to hosts: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html#connecting-to-hosts-behavioral-inventory-parameters

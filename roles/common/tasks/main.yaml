@@ -1,0 +1,5 @@
+- name: run simple task
+  shell: echo "{{greeting}}"
+
+- name: pwd
+  shell: pwd
