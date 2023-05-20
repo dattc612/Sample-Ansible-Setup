@@ -2,7 +2,7 @@
 
 ## Inventory
 
-### Simple check inventory
+### Check inventory
     ansible-inventory -i inventories/01.yaml  --list 
 ### Ping it
     ansible server -m ping -i inventories/01.yaml 
